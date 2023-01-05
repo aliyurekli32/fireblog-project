@@ -1,16 +1,12 @@
 import {
   MDBContainer,
   MDBNavbar,
-  MDBNavbarItem,
   MDBBtn,
-  MDBInputGroup,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
-  MDBNavbarLink,
   MDBBtnGroup
-
 } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../contexts/AuthContext';
@@ -20,7 +16,7 @@ import { logout } from '../helpers/firebase';
 const Navbar = () => {
   const {user}=useUserAuth()
   const navigate=useNavigate();
-  console.log(user);
+  
   
   return (
     <MDBNavbar light bgColor='light'>
